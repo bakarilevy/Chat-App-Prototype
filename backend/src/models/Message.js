@@ -19,6 +19,8 @@ const messageSchema = new mongoose.Schema(
     },
     image: {
       type: String,
+      trim: true,
+      maxlength: 2000
     },
   },
   { timestamps: true }
